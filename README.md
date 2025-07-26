@@ -81,4 +81,5 @@ Evaluated using accuracy, precision, and confusion matrix
 📤 Output
 
 🧠 Prediction Logic – Based on user-input employee data, the system predicts if the employee is likely to stay or leave.
+
 📊 Result Display – Output is shown on the prediction page with clear labels and optional visual indicators like colors or charts.
