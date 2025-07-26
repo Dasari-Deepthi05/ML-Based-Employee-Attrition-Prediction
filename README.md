@@ -25,6 +25,7 @@ AttriSight is a web-based platform designed to help organizations predict employ
 
 ## 📁 Project Structure Overview
 
+```bash
 attrition/
 ├── accounts/                    # User authentication (login, register)
 │   ├── migrations/              # Django migration files
@@ -68,7 +69,7 @@ attrition/
 ├── db.sqlite3                   # Default SQLite database (can switch to PostgreSQL)
 ├── manage.py                    # Django command-line utility
 └── requirements.txt             # Python dependencies
-
+```
 
 📊 Machine Learning Model
 Developed using Random Forest Classifier
