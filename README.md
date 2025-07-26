@@ -26,13 +26,49 @@ AttriSight is a web-based platform designed to help organizations predict employ
 ## 📁 Project Structure Overview
 
 attrition/
-├── accounts/ # Authentication logic
-├── employee_attrition/ # ML model integration
-├── templates/ # HTML templates
-├── static/ # CSS, JS, images
-├── staticfiles/ # Collected static files for deployment
-├── db.sqlite3 # Local database
-└── manage.py # Django management script
+├── accounts/                    # User authentication (login, register)
+│   ├── migrations/              # Django migration files
+│   ├── __init__.py
+│   ├── admin.py                 # Admin panel setup
+│   ├── apps.py                  # App configuration
+│   ├── forms.py                 # Custom user forms
+│   ├── models.py                # User models
+│   ├── tests.py                 # Unit tests
+│   ├── urls.py                  # Routes for accounts
+│   └── views.py                 # Logic for login/register
+│
+├── attrition/                   # Main Django project config (settings, urls, wsgi)
+│   ├── __init__.py
+│   ├── asgi.py
+│   ├── settings.py
+│   ├── urls.py
+│   └── wsgi.py
+│
+├── employee_attrition/          # ML model logic and integration
+│   ├── Attrition_Model.ipynb    # Jupyter Notebook for training and evaluation
+│   └── predict.py               # Python script for inference
+│
+├── static/                      # Static assets (CSS, JS, images)
+│   └── css/
+│   └── js/
+│   └── images/
+│
+├── staticfiles/                 # Collected static files (for deployment)
+│
+├── templates/                   # HTML templates for frontend pages
+│   ├── base.html
+│   ├── index.html
+│   ├── login.html
+│   ├── register.html
+│   ├── predict.html
+│   ├── about.html
+│   ├── project.html
+│   └── service.html
+│
+├── db.sqlite3                   # Default SQLite database (can switch to PostgreSQL)
+├── manage.py                    # Django command-line utility
+└── requirements.txt             # Python dependencies
+
 
 📊 Machine Learning Model
 Developed using Random Forest Classifier
